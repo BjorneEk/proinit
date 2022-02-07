@@ -1,0 +1,7 @@
+\t [ \033[1;33m-h\033[0m]             | [\033[1;33m--help\033[0m]                       usage help
+\t [ \033[1;33m-l\033[0m]  <language> | [\033[1;33m--language\033[0m]       <language>  specified a language, available languages are currently (c, scala, java)
+\t [ \033[1;33m-g\033[0m]  <X>        | [\033[1;33m--git\033[0m]            <X>         whether to initialize a git repository, optional arguments are (noig|nogitignore, norm|noreadme, bare)
+\t [ \033[1;33m-t\033[0m]  <template> | [\033[1;33m--template\033[0m]       <template>  initialize project with a template specified in the languages
+                                               templates folder in the [\033[1;33m~/.proinit\033[0m] folder
+\t [ \033[1;33m-lt\033[0m] <language> | [\033[1;33m--list-templates\033[0m] <language>  list available templates for the specified language
+\t [ \033[1;33m-nm\033[0m]            | [\033[1;33m--nomakefile\033[0m]                 initialize without a makefile
