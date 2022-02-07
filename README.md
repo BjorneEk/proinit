@@ -2,7 +2,7 @@
 ---
 **simple project initialization script that automates the process of setting up a new project.**
 
-Currently suports C Java and Scala projects
+Currently suports c c++ Java and Scala projects
 
 ### Project:
 

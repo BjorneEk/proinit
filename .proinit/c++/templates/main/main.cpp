@@ -1,0 +1,15 @@
+
+////////////////////////////////////////////////////////////////////////////
+///        @author Gustaf Franzén :: https://github.com/BjorneEk;        ///
+////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char const *argv[]) {
+
+	cout << "new project!!!" << endl;
+	
+	return 0;
+}

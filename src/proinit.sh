@@ -16,7 +16,7 @@
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
-LANGUAGES='c scala java'
+LANGUAGES='c c++ scala java'
 
 NAME='new-project'
 LANG='none'
@@ -101,7 +101,7 @@ function create_project {
 
 		# add correct names to makefile
 		case $2 in
-			c)
+			c|c++)
 				echo "TARGET = $1" > $1/Makefile
 				;;
 			java|scala)
@@ -177,6 +177,10 @@ for arg in "$@"; do
 			fi
 			if [ "$#" -eq 2 ]; then
 				case $2 in
+					c++|C++)
+						list_templates "c++"
+						exit 0
+						;;
 					c|C)
 						list_templates "c"
 						exit 0
@@ -195,6 +199,7 @@ for arg in "$@"; do
 				esac
 			else
 				list_templates "c"
+				list_templates "c++"
 				list_templates "java"
 				list_templates "scala"
 				exit 0
@@ -228,6 +233,10 @@ while [[ $# -gt 0 ]]; do
 				exit 1
 			fi
 			case $2 in
+				c++|C++)
+					LANG='c++'
+					MAKEFILE='enabled'
+					;;
 				c|C)
 					LANG='c'
 					MAKEFILE='enabled'
