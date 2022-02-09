@@ -10,7 +10,7 @@ all: $(JAVA_SOURCES)
 	$(JC) -d . $^
 
 run: all
-	java $(PACKAGE).TakePinsGame
+	java $(PACKAGE).Main
 
 clean:
 	$(RM) $(PACKAGE)/*.class

@@ -12,7 +12,7 @@ OBJ = ${C_SOURCES:.c=.o}
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-TARGET: $(OBJ)
+$(TARGET): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:

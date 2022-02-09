@@ -1,5 +1,5 @@
 
-CC = gcc
+CC = g++
 INCLUDE_DIR = src
 CFLAGS = -I$(INCLUDE_DIR)
 C_SOURCES = $(wildcard src/*.cpp *.cpp )
@@ -9,10 +9,10 @@ OBJ = ${C_SOURCES:.cpp=.o}
 # First rule is the one executed when no parameters are fed to the Makefile
 
 
-%.o: %.c $(DEPS)
+%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-TARGET: $(OBJ)
+$(TARGET): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:

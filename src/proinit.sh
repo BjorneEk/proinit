@@ -125,7 +125,7 @@ function create_project {
 		for file in "${source_files[@]}"; do
 
 			# overwrite original source file pith package tag
-			echo "package $package" > $file
+			echo "package $package;" > $file
 
 			# append the source code to the file with the package tag
 			cat $1/tmpsrc/${file##*/} >> $file
