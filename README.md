@@ -30,3 +30,7 @@ more templates for the already supported languages can be added in their respect
 #### Limitations
 
  - **package** generated Java and Scala package names are currently the project name in all lower case
+
+<img alt="lang" src="https://img.shields.io/github/languages/top/bjorneek/proinit"/>
+<img alt="size" src="https://img.shields.io/github/repo-size/bjorneek/proinit"/>
+<img alt="lines" src="https://img.shields.io/tokei/lines/github/bjorneek/proinit"/>
